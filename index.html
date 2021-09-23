@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <title>farmacia</title>
+  <link rel="icon" href="img/icon/cruz.png">
+</head>
+
+<body>
+  <!-- navbar -->
+  <div class="navbar">
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Farmacia</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ofertas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categorias
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Victaminas y Suplementos</a></li>
+                <li><a class="dropdown-item" href="#">Suplementos Deportivos</a></li>
+                <li><a class="dropdown-item" href="#">Antiestres</a></li>
+                <li><a class="dropdown-item" href="#">Cuidado de la Piel</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Nuevos Productos</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- carucel -->
+  <div class="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/imagen1.jpeg" class="d-block w-100" alt="..." width="900px" height="590px">
+        </div>
+        <div class="carousel-item">
+          <img src="img/imagen2.jpeg" class="d-block w-100" alt="..." width="900px" height="590px">
+        </div>
+        <div class="carousel-item">
+          <img src="img/imagen3.jpeg" class="d-block w-100" alt="..." width="900px" height="590px">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="card-medica">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="img/imagen1.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Asismed-l</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+              <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img/imagen2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ajo Negro 100 Caps.</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+              <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img/imagen3.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mariguanol 50 gr.</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content.</p>
+              <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img/imagen2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ajo Negro 100 Caps.</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+              <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+
+    <div class="container-footer-all">
+      <div class="container-body-footer">
+        <div class="column1">
+          <h1>Mas Informacion de la Compañia</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, incidunt!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta suscipit deleniti
+            velit assumenda, voluptate ipsam maxime, atque impedit
+            aperiam aut ex asperiores totam corrupti laboriosam quasi provident dolor ratione error!
+          </p>
+        </div>
+
+        <div class="column2">
+          <h1>Redes Sociales</h1>
+          <div class="row">
+            <img src="img/icon/facebook.png">
+            <label>Siguenos en Facebook</label>
+          </div>
+          <div class="row">
+            <img src="img/icon/twitter.png">
+            <label>Siguenos en twtter</label>
+          </div>
+          <div class="row">
+            <img src="img/icon/instagram.png">
+            <label>Siguenos en instagram</label>
+          </div>
+        </div>
+
+        <div class="column3">
+          <h1>Informacion Contactos</h1>
+          <div class="row2">
+            <img src="img/icon/home.png">
+            <label>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </label>
+          </div>
+          <div class="row2">
+            <img src="img/icon/telefono.svg">
+            <label>
+              961-284-13-81
+            </label>
+          </div>
+          <div class="row2">
+            <img src="img/icon/email.png">
+            <label>
+              farmacia@hotmail.com
+            </label>
+          </div>
+        </div>
+      </div>
+
+     
+      <!-- https://www.youtube.com/watch?v=mSh2yWLk4eU -->
+
+
+    </div>
+    <div class="container-footer">
+      <div class="footer">
+      <div class="copyright">
+        &copy;Farmacia todos los derechos reservados | <a href="">Magtimus</a>
+      </div>
+
+      <div class="information">
+        <a href="">Informacion Compañia</a>|
+        <a href="">privacion y Politicas</a>|
+        <a href="">Terminos y condiciones</a>
+      </div>
+    </div>
+    </div>
+
+
+  </footer>
+</body>
+
+</html>
